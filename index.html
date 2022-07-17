@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gutemberg</title>
+</head>
+<body>
+    <div id="background"></div>
+    <div>
+        <div id="container">
+            <div id="title">Gutenberg</div>
+            <div id="content">
+                <img id="gutenberg" src="gutenberg.webp" />
+                <p id="description">
+                        <strong>Johannes Gutenberg</strong> (c. 1398 – February 3, 1468) was a German blacksmith, goldsmith, printer, and publisher who invented the world's first printing press. Gutenberg's printing press revolutionised the creation of books and helped make them affordable, ushering in a new era of affordable books and literature.
+                </p>
+            </div>
+           
+        </div>
+    </div>
+    
+
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #background {
+            height: 100vh;
+            width: 100vw;
+
+            background: url(bg.jpg);
+            background-size: cover;
+            opacity: 0.9;
+
+            filter: blur(5px);
+        }
+
+        #container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 60%;
+            height: 90%;
+            z-index: 1;
+        }
+
+        #content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 65%;
+            width: 80%;
+            margin-left: 10%;
+        }
+
+        #gutenberg {
+            height: 70%;
+            box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+        }
+
+        #description {
+            margin-left: 50px;
+            flex-grow: 1;
+            background: rgba(0, 0, 0, 0.2);
+            height: 100%;
+            color: #eee;
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.5em;
+            padding: 30px;
+            line-height: 1.5;
+            box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.9);
+            border-radius: 10px;
+        }
+
+        #title {
+            font-family: 'Roboto', sans-serif;
+            font-size: 4em;
+            color: #eee;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.2);
+            margin-bottom: 80px;
+            box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.9);
+            font-weight: bold;
+            padding: 10px;
+            border-radius: 10px;
+        }
+    </style>
+</body>
+</html>
